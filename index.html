@@ -4,15 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio Website</title>
-
+    <!-- daisyui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font-awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>hello</h1>
+    <!-- header start -->
+    <header class="lg:w-11/12 mx-auto">
+      <!-- nav start -->
+
+      <nav class="pt-5">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span
+              class="self-center text-3xl whitespace-nowrap text-primary-color font-extrabold"
+              >Rinterio</span
+            >
+          </a>
+          <div
+            class="flex items-center gap-6 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <i class="fa-solid fa-magnifying-glass hidden md:block"></i>
+            <i class="fa-solid fa-cart-shopping hidden md:block"></i>
+            <button
+              type="button"
+              class="text-primary-color bg-[#ABEF5F] text-lg rounded-[32px]  px-5 py-3 text-center font-extrabold hidden md:block"
+            >
+              Book Contacts
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block text-primary-color font-extrabold"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-base text-third-color font-normal"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-base text-third-color font-normal"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-base text-third-color font-normal"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block text-base text-third-color font-normal"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section start-->
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="relative mb-6 sm:mx-auto md:mb-10 md:max-w-md lg:max-w-lg">
+          <img class="object-cover w-full h-56 rounded md:h-64 lg:h-80" src="/images/banner.png" alt="" />
+         
+        </div>
+        <div class="mb-16 md:mb-0 md:max-w-5xl mx-auto text-center">
+          <h2 class="mb-5 font-sans md:text-[64px] text-primary-color font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-none ">
+            A barn house of this design has a striking appearance
+          </h2>
+          <p class="mb-8 mt-6 text-base text-secondary-color font-normal">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+          </p>
+          <div class="flex items-center md:justify-center">
+            <button
+            type="button"
+            class="text-primary-color bg-[#acef5f84] text-lg rounded-[32px]  lg:px-6 lg:py-3 px-20 py-3 text-center font-extrabold md:block border border-[#ABEF5F]"
+          >
+           View Details
+          </button>
+          </div>
+        </div>
+      </div>
+      <!-- banner section end-->
+      <!-- nav end -->
+    </header>
+    <!-- header end -->
+    <!-- main section start -->
+    <main></main>
+    <!-- main section end -->
+    <!-- footer start -->
+    <footer></footer>
+    <!-- footer end -->
   </body>
 </html>

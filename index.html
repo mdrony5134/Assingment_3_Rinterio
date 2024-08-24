@@ -29,7 +29,11 @@
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
+        
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <div class="w-8 h-8 bg-[#ABEF5F] rounded-full flex items-center justify-center -rotate-45">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
             <span
               class="self-center text-3xl whitespace-nowrap text-primary-color font-extrabold"
               >Rinterio</span
@@ -42,10 +46,14 @@
             <i class="fa-solid fa-cart-shopping hidden md:block"></i>
             <button
               type="button"
-              class="text-primary-color bg-[#ABEF5F] text-lg rounded-[32px] px-5 py-3 text-center font-extrabold hidden md:block"
+              class="text-primary-color bg-[#ABEF5F] text-lg rounded-[32px] px-5 py-3 text-center font-extrabold hidden md:flex md:items-center md:gap-2"
             >
               Book Contacts
+              <div class="w-8 h-8 bg-[#1C1C1C] rounded-full flex items-center justify-center -rotate-45 text-white">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
             </button>
+            
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
@@ -118,7 +126,7 @@
         <div class="relative mb-6 sm:mx-auto md:mb-10 md:max-w-md lg:max-w-lg">
           <img
             class="object-cover w-full h-56 rounded md:h-64 lg:h-80"
-            src="/images/banner.png"
+            src="./images/banner.png"
             alt=""
           />
         </div>
@@ -136,9 +144,12 @@
           <div class="flex items-center md:justify-center">
             <button
               type="button"
-              class="text-primary-color bg-[#acef5f84] text-lg rounded-[32px] lg:px-6 lg:py-3 px-20 py-3 text-center font-extrabold md:block border border-[#ABEF5F]"
+              class="text-primary-color bg-[#acef5f84] text-lg rounded-[32px] lg:px-6 lg:py-3 px-16 py-3 text-center font-extrabold flex items-center gap-2 border border-[#ABEF5F]"
             >
               View Details
+              <div class="w-8 h-8 bg-[#ABEF5F] rounded-full flex items-center justify-center -rotate-45">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
             </button>
           </div>
         </div>
@@ -151,12 +162,13 @@
     <main class="bg-[#F4F4F4]">
       <!-- about section start -->
       <div
-        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        class="px-4 md:py-16 py-8 sm:pt-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
       >
         <div class="flex flex-col justify-between lg:flex-row">
           <div class="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
             <div class="max-w-xl mb-6">
-              <div>
+              <div class="flex flex-col justify-center items-center">
+                <img class="md:relative md:right-16 md:bottom-3 hidden md:block" src="./images/Vector.png" alt="vector image">
                 <p
                   class="inline-block bg-white px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-white"
                 >
@@ -164,11 +176,11 @@
                 </p>
               </div>
               <h2
-                class="max-w-lg mb-6 font-sans text-[40px] font-bold tracking-tight text-primary-color sm:text-4xl sm:leading-none"
+                class="max-w-lg mb-6 text-center md:text-start font-sans text-[40px] font-bold tracking-tight text-primary-color sm:text-[28px] sm:leading-none"
               >
                 We design thoughtful, liveable spaces
               </h2>
-              <p class="text-base text-secondary-color font-medium">
+              <p class="text-base md:text-start text-center text-secondary-color font-medium">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents.
@@ -183,7 +195,7 @@
                     <img
                       class="absolute left-5 top-8 w-[60px] h-[60px] object-cover object-center transition duration-50"
                       loading="lazy"
-                      src="/images/commercial.png"
+                      src="./images/commercial.png"
                     />
                   </div>
 
@@ -207,7 +219,7 @@
                     <img
                       class="absolute left-5 top-8 w-[60px] h-[60px] object-cover object-center transition duration-50"
                       loading="lazy"
-                      src="/images/residential.png"
+                      src="./images/residential.png"
                     />
                   </div>
 
@@ -226,7 +238,7 @@
           <div class="relative lg:w-1/2">
             <img
               class="object-cover w-full md:max-w-xl md:h-[540px] rounded-2xl"
-              src="/images/about.png"
+              src="./images/about.png"
               alt=""
             />
           </div>
@@ -254,9 +266,13 @@
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
-        <div class="grid  grid-cols-1 pl-6 lg:w-11/12 mx-auto lg:grid-cols-4 gap-6 pt-8">
-          <div class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#E7C1D3]">
-            <img src="/images/concept.png" class="mb-3" alt="concept image" />
+        <div
+          class="grid grid-cols-1 pl-6 lg:w-11/12 mx-auto lg:grid-cols-4 gap-6 pt-8"
+        >
+          <div
+            class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#E7C1D3]"
+          >
+            <img src="./images/concept.png" class="mb-3" alt="concept image" />
             <a href="#">
               <h5
                 class="mb-2 text-2xl tracking-tight text-primary-color font-extrabold"
@@ -269,8 +285,14 @@
               modern.
             </p>
           </div>
-          <div class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#EFDA6E]">
-            <img src="/images/flow-chart.png" class="mb-3" alt="concept image" />
+          <div
+            class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#EFDA6E]"
+          >
+            <img
+              src="./images/flow-chart.png"
+              class="mb-3"
+              alt="concept image"
+            />
             <a href="#">
               <h5
                 class="mb-2 text-2xl tracking-tight text-primary-color font-extrabold"
@@ -283,8 +305,10 @@
               modern.
             </p>
           </div>
-          <div class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#A4DAC3]">
-            <img src="/images/vision.png" class="mb-3" alt="concept image" />
+          <div
+            class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#A4DAC3]"
+          >
+            <img src="./images/vision.png" class="mb-3" alt="concept image" />
             <a href="#">
               <h5
                 class="mb-2 text-2xl tracking-tight text-primary-color font-extrabold"
@@ -297,8 +321,14 @@
               modern.
             </p>
           </div>
-          <div class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#77AAEA]">
-            <img src="/images/budget-planning.png" class="mb-3" alt="concept image" />
+          <div
+            class="md:max-w-[275px] w-[95%] p-6 rounded-2xl shadow bg-[#77AAEA]"
+          >
+            <img
+              src="./images/budget-planning.png"
+              class="mb-3"
+              alt="concept image"
+            />
             <a href="#">
               <h5
                 class="mb-2 text-2xl tracking-tight text-primary-color font-extrabold"
@@ -314,118 +344,231 @@
         </div>
       </div>
       <!-- work process section end -->
-
-      
     </main>
-    <!-- contact form start -->
-    <div class="my-2">
-        
-  
-        <div class="bg-[url('/images/bg.jpg')] bg-no-repeat bg-cover px-4 py-12 md:pt-24 md:pb-14">
-            <div class="lg:max-w-2xl mx-auto text-center mb-6">
-                <div>
-                  <p
-                    class="inline-block bg-white px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-white"
-                  >
-                    <i class="fa-solid fa-arrow-right-long"></i> Let's Connect
-                  </p>
-                </div>
-                <h2
-                  class="mb-6 font-sans text-[40px] font-bold tracking-tight text-primary-color sm:text-4xl sm:leading-none"
-                >
-                Let’s Discuss Next Project
-                </h2>
-                <p class="text-base text-secondary-color font-medium">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+    <!-- our portfolio section start -->
+    <div class="lg:w-11/12 mx-auto md:py-28">
+
+      <div class="lg:max-w-2xl mx-auto text-center mb-6">
+        <div>
+          <p
+            class="inline-block bg-[#acef5f84] px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full"
+          >
+            <i class="fa-solid fa-arrow-right-long"></i> Explore our Latest
+            works
+          </p>
+        </div>
+        <h2
+          class="mb-6 font-sans text-[40px] font-bold tracking-tight text-primary-color sm:text-4xl sm:leading-none"
+        >
+          Our Latest Portfolio
+        </h2>
+        <p class="text-base text-secondary-color font-medium">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+
+      <div>
+        <!-- component -->
+        <div class="lg:w-11/12 mx-auto grid grid-cols-1 items-center md:grid-cols-4 gap-6">
+          <div
+            class="flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2  border border-white bg-white md:col-span-3"
+          >
+            <div class="w-[260px] bg-white grid place-items-center">
+              <img
+                src="/images/img1.png"
+                alt="tailwind logo"
+                class="rounded-xl"
+              />
+            </div>
+            <div class="md:w-[500px] w-full bg-white">
+              <div class="flex flex-col gap-4">
+                <h3 class="font-black text-primary-color md:text-2xl text-xl">
+                  Commercial
+                </h3>
+                <p class="text-secondary-color text-base">
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <p class="text-xl font-black text-gray-800">
+                  View Details
+                  <span class="font-normal text-gray-600 text-base"></span>
                 </p>
               </div>
-          <div class="mx-auto md:w-[970px] w-full  md:p-8">
-
-  
-            <form class="mt-8 grid sm:grid-cols-2 gap-6">
-              <div>
-                <input type='text' placeholder='First Name*'
-                  class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required" />
-              </div>
-              <div>
-                <input type='text' placeholder='Last Name*'
-                  class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required" />
-              </div>
-              <div>
-                <input type='text' placeholder='Phone Number*'
-                  class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required" />
-              </div>
-              <div>
-                <input type='text' placeholder='Your Email*'
-                class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required" />
-              </div>
-              
-              
-              <div class="col-span-full">
-                <textarea placeholder='Message' rows="6"
-                  class="w-full rounded-[32px] py-4 px-5 border border-gray-300 text-sm focus:outline-none"></textarea>
-              </div>
-             
-              <button type='button'
-                class="text-primary-color font-extrabold  lg:w-[910px] bg-[#ABEF5F] tracking-wide rounded-[32px] text-xl px-4 py-3 mt-4">
-               
-               Send Mail
-              </button>
-            </form>
+            </div>
+          </div>
+          <div
+          class="flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 md:pt-2 md:h-[210px] max-w-xs md:max-w-3xl mx-auto border border-white bg-white"
+        >
+          <div class="w-[260px] bg-white grid place-items-center">
+            <img
+              src="/images/img2.png"
+              alt="tailwind logo"
+              class="rounded-xl"
+            />
+          </div>
+          
+        </div>
+          <div
+          class="flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2  md:h-[210px] max-w-xs md:max-w-3xl mx-auto border border-white bg-white"
+        >
+          <div class="w-[260px] bg-white grid place-items-center">
+            <img
+              src="./images/img3.png"
+              alt="tailwind logo"
+              class="rounded-xl"
+            />
+          </div>
+          
+        </div>
+        <div
+        class="flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 md:pt-2 md:h-[210px] border border-white bg-white md:col-span-2"
+      >
+        <div class="w-full bg-white grid place-items-center">
+          <img
+            src="./images/img4.png"
+            alt="tailwind logo"
+            class="rounded-xl"
+          />
+        </div>
+        <div class="w-full bg-white">
+          <div class="flex flex-col gap-4">
+            <h3 class="font-black text-primary-color md:text-2xl text-xl">
+              Commercial
+            </h3>
+            <p class="text-secondary-color text-base">
+              The barn house captivates with its blend of rustic charm and
+              modern. The barn house captivates with its blend of rustic
+              charm and modern .
+            </p>
+            <p class="text-xl font-black text-gray-800">
+              View Details
+              <span class="font-normal text-gray-600 text-base"></span>
+            </p>
           </div>
         </div>
       </div>
-      <!-- contact form end -->
+      <div
+      class="flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-2 md:pt-2 md:h-[210px] max-w-xs md:max-w-3xl mx-auto border border-white bg-white"
+    >
+      <div class="w-full bg-white grid place-items-center">
+        <img
+          src="./images/img5.png"
+          class="rounded-xl"
+        />
+      </div>
+      
+    </div>
+        </div>
+      </div>
+    </div>
+    <!-- our portfolio section end -->
+
+    <!-- contact form start -->
+    <div class="my-2">
+      <div
+        class="bg-[url('/images/bg.jpg')] bg-no-repeat bg-cover px-4 py-12 md:pt-24 md:pb-14"
+      >
+        <div class="lg:max-w-2xl mx-auto text-center mb-6">
+          <div>
+            <p
+              class="inline-block bg-white px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-white"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i> Let's Connect
+            </p>
+          </div>
+          <h2
+            class="mb-6 font-sans text-[40px] font-bold tracking-tight text-primary-color sm:text-4xl sm:leading-none"
+          >
+            Let’s Discuss Next Project
+          </h2>
+          <p class="text-base text-secondary-color font-medium">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <div class="mx-auto md:w-[970px] w-full md:p-8">
+          <form class="mt-8 grid sm:grid-cols-2 gap-6">
+            <div>
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Your Email*"
+                class="w-full rounded-[64px] py-4 px-5 border border-gray-300 text-sm focus:outline-none required"
+              />
+            </div>
+
+            <div class="col-span-full">
+              <textarea
+                placeholder="Message"
+                rows="6"
+                class="w-full rounded-[32px] py-4 px-5 border border-gray-300 text-sm focus:outline-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="button"
+              class="text-primary-color font-extrabold lg:w-[910px] bg-[#ABEF5F] tracking-wide rounded-[32px] text-xl px-4 py-3 mt-4"
+            >
+              Send Mail
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- contact form end -->
     <!-- main section end -->
     <!-- footer start -->
-    <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
-        <nav class="grid grid-flow-col gap-4">
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <div class="grid grid-flow-col gap-4">
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current">
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current">
-                <path
-                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current">
-                <path
-                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
-          </div>
-        </nav>
-        <aside>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-        </aside>
-      </footer>
+    <footer
+      class="footer footer-center bg-[#1C1C1C] text-base-content rounded p-10"
+    >
+      <div class="md:max-w-2xl">
+        <h1 class="text-3xl font-extrabold text-[#E9E9E9]">Rinterio</h1>
+        <p class="text-base font-medium text-[#737373]">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <nav class="grid grid-cols-1 md:grid-flow-col items-center md:gap-28 gap-5">
+        <a class="link link-hover text-[#E9E9E9]">Home</a>
+        <a class="link link-hover text-[#E9E9E9]">Services</a>
+        <a class="link link-hover text-[#E9E9E9]">Portfolio</a>
+        <a class="link link-hover text-[#E9E9E9]">Blogs</a>
+        <a class="link link-hover text-[#E9E9E9]">Contact Us</a>
+      </nav>
+      <aside>
+        <button
+              type="button"
+              class="text-primary-color bg-[#ABEF5F] text-lg rounded-[32px] px-5 py-3 text-center font-extrabold  flex items-center gap-2"
+            >
+              Book Contacts
+              <div class="w-8 h-8 bg-[#1C1C1C] rounded-full flex items-center justify-center -rotate-45 text-white">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </button>
+      </aside>
+    </footer>
     <!-- footer end -->
   </body>
 </html>
